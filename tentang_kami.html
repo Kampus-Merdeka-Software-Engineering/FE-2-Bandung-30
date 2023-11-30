@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill Detik</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Public+Sans:ital,wght@0,100;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="./css/tentang_kami.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo"><img src="./image/logo-2.png" alt="logo"></a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+
+        <!-- Dropdown Nasional -->
+        
+        <div class="dropdown" id="nationalDropdown">
+          <a href="national.html" class="navbar-item" id="nationalLink">Nasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./national/politik.html">Politik</a>
+            <a href="./national/hukum.html">Hukum & Kriminal</a>
+            <a href="./national/peristiwa.html">Peristiwa</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Internasional -->
+        <div class="dropdown" id="internationalDropdown">
+          <a href="international.html" class="navbar-item" id="internationalLink">Internasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./international/asean.html">Asean</a>
+            <a href="./international/asiaPasifik.html">Asia Pasifik</a>
+            <a href="./international/timurTengah.html">Timur Tengah</a>
+            <a href="./international/eropaAmerika.html">Eropa Amerika</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Ekonomi -->
+        <div class="dropdown" id="economyDropdown">
+          <a href="ekonomi.html" class="navbar-item" id="economyLink">Ekonomi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./ekonomi/keuangan.html">Keuangan</a>
+              <a href="./ekonomi/energi.html">Energi</a>
+              <a href="./ekonomi/bisnis.html">Bisnis</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Olahraga -->
+        <div class="dropdown" id="sportsDropdown">
+          <a href="olahraga.html" class="navbar-item" id="sportsLink">Olahraga</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./olahraga/sepakbola.html">Sepakbola</a>
+              <a href="./olahraga/motogp.html">Moto GP</a>
+              <a href="./olahraga/badminton.html">Badminton</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Teknologi -->
+        <div class="dropdown" id="technologyDropdown">
+          <a href="teknologi.html" class="navbar-item" id="technologyLink">Teknologi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+            <a href="./teknologi/ti.html">Teknologi Informasi</a>
+            <a href="./teknologi/sains.html">Sains</a>
+            <a href="./teknologi/telekomunikasi.html">Telekomunikasi</a>
+        </div>
+      </div>
+
+        <!-- Dropdown Otomotif -->
+        <div div class="dropdown" id="automotiveDropdown">
+          <a href="otomotif.html" class="navbar-item" id="automotiveLink">Otomotif</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./otomotif/tren.html">Tren</a>
+              <a href="./otomotif/mobil.html">Mobil</a>
+              <a href="./otomotif/motor.html">Motor</a>
+            </div>
+          </div>
+
+        <!-- Dropdown Hiburan -->
+        <div class="dropdown" id="entertainmentDropdown">
+          <a href="hiburan.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./hiburan/film.html">Film</a>
+            <a href="./hiburan/musik.html">Musik</a>
+            <a href="./hiburan/selebriti.html">Selebriti</a>
+          </div>
+        </div>
+
+          <!-- Dropdown Gaya Hidup -->
+          <div class="dropdown" id="lifestyleDropdown">
+            <a href="gayahidup.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
+            <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./gayahidup/health.html">Health</a>
+              <a href="./gayahidup/food.html">Food</a>
+              <a href="./gayahidup/travel.html">Travel</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari Berita..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="container">
+        <div class="text-container">
+          <h1>Tentang Kami</h1>
+          <p class="paragraf">
+            Kemajuan teknologi membawa informasi bergerak dengan kecepatan tak
+            terbatas, tidak lagi bergantung pada media cetak, surat, atau mulut
+            ke mulut. Dengan hanya sekali sentuhan pada layar ponsel atau klik
+            pada komputer, informasi dari berbagai belahan dunia dapat diakses
+            dalam hitungan detik. Berita terbaru, riset ilmiah, panduan,
+            tutorial, dan segala hal lainnya menjadi tersedia dengan cepat.
+          </p>
+          <p class="paragraf">
+            Melalui tagline “Keep Updating In Every Second”, Spill Detik
+            berkomitmen untuk menyajikan informasi yang akurat, relevan,
+            seimbang, dan terpercaya kepada pembaca. Melalui desain visual yang
+            inovatif, kami ingin memberikan kesan dan pengalaman yang memikat
+            untuk pembaca. Lebih dari itu, kami membuka saluran komunikasi yang
+            aktif untuk melibatkan pembaca kami dalam menghargai setiap
+            pandangan, umpan balik, dan ide yang dapat memperkaya pengalaman
+            bersama kami.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="team-section">
+      <div class="container">
+        <h1>Tim Kami</h1>
+        <div class="group">
+          <div class="team">
+            <div class="team-member">
+              <img src="./image/ADINDA N.M. FOTO.jpeg" alt="foto" />
+              <h3>Adinda Nurfitriani</h3>
+              <p>Project Leader</p>
+            </div>
+
+            <div class="team-member">
+              <img src="./image/Yogih Arahman.jpg" alt="foto" />
+              <h3>Yogih Arahman</h3>
+              <p>Front End Developer</p>
+            </div>
+
+            <div class="team-member">
+              <img src="./image/Dimas Harli Prasetya .png" alt="foto" />
+              <h3>Dimas Harli Prasetya</h3>
+              <p>Front End Developer</p>
+            </div>
+
+            <div class="team-member">
+              <img src="./image/Michelle Ledisty Aisha.jpg" alt="foto" />
+              <h3>Michelle Ledisty Aisha</h3>
+              <p>Back end Developer</p>
+            </div>
+
+            <div class="team-member">
+              <img src="./image/rizki wahyudin.jpg" alt="foto" />
+              <h3>Rizki Wahyudin</h3>
+              <p>Back end Developer</p>
+            </div>
+
+            <div class="team-member">
+              <img src="./image/syarifa n. izza.jpg" alt="foto" />
+              <h3>Syarifa N. Izza</h3>
+              <p>Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ikuti Kami</p>
+      <div class="socials">
+        <a
+          href="https://instagram.com/spill_detik?igshid=MTBxYzloYjJtcmZqZA=="
+          target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/spilldetik" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61553584762059&mibextid=ZbWKwL"
+          target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="contact.html">Kontak</a>
+        <a href="tentang_kami.html">Tentang Kami</a>
+        <a href="kode_etik.html">Kode Etik</a>
+        <a href="form_pengaduan.html">Form Pengaduan</a>
+        <a href="mediasiber.html">Pedoman Media Siber</a>
+      </div>
+
+      <div class="credit">
+        <p>Copyright by Group 30</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+<script src="./js/script.js"></script>
+  </body>
+</html>

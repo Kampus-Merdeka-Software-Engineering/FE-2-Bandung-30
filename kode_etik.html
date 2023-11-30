@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill Detik</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Public+Sans:ital,wght@0,100;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="./css/kodeetik.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo"><img src="./image/logo-2.png" alt="logo"></a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+
+        <!-- Dropdown Nasional -->
+        
+        <div class="dropdown" id="nationalDropdown">
+          <a href="national.html" class="navbar-item" id="nationalLink">Nasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./national/politik.html">Politik</a>
+            <a href="./national/hukum.html">Hukum & Kriminal</a>
+            <a href="./national/peristiwa.html">Peristiwa</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Internasional -->
+        <div class="dropdown" id="internationalDropdown">
+          <a href="international.html" class="navbar-item" id="internationalLink">Internasional</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./international/asean.html">Asean</a>
+            <a href="./international/asiaPasifik.html">Asia Pasifik</a>
+            <a href="./international/timurTengah.html">Timur Tengah</a>
+            <a href="./international/eropaAmerika.html">Eropa Amerika</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Ekonomi -->
+        <div class="dropdown" id="economyDropdown">
+          <a href="ekonomi.html" class="navbar-item" id="economyLink">Ekonomi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./ekonomi/keuangan.html">Keuangan</a>
+              <a href="./ekonomi/energi.html">Energi</a>
+              <a href="./ekonomi/bisnis.html">Bisnis</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Olahraga -->
+        <div class="dropdown" id="sportsDropdown">
+          <a href="olahraga.html" class="navbar-item" id="sportsLink">Olahraga</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./olahraga/sepakbola.html">Sepakbola</a>
+              <a href="./olahraga/motogp.html">Moto GP</a>
+              <a href="./olahraga/badminton.html">Badminton</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Teknologi -->
+        <div class="dropdown" id="technologyDropdown">
+          <a href="teknologi.html" class="navbar-item" id="technologyLink">Teknologi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+            <a href="./teknologi/ti.html">Teknologi Informasi</a>
+            <a href="./teknologi/sains.html">Sains</a>
+            <a href="./teknologi/telekomunikasi.html">Telekomunikasi</a>
+        </div>
+      </div>
+
+        <!-- Dropdown Otomotif -->
+        <div div class="dropdown" id="automotiveDropdown">
+          <a href="otomotif.html" class="navbar-item" id="automotiveLink">Otomotif</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./otomotif/tren.html">Tren</a>
+              <a href="./otomotif/mobil.html">Mobil</a>
+              <a href="./otomotif/motor.html">Motor</a>
+            </div>
+          </div>
+
+        <!-- Dropdown Hiburan -->
+        <div class="dropdown" id="entertainmentDropdown">
+          <a href="hiburan.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./hiburan/film.html">Film</a>
+            <a href="./hiburan/musik.html">Musik</a>
+            <a href="./hiburan/selebriti.html">Selebriti</a>
+          </div>
+        </div>
+
+          <!-- Dropdown Gaya Hidup -->
+          <div class="dropdown" id="lifestyleDropdown">
+            <a href="gayahidup.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
+            <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./gayahidup/health.html">Health</a>
+              <a href="./gayahidup/food.html">Food</a>
+              <a href="./gayahidup/travel.html">Travel</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari Berita..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
+
+    <section class="content">
+      <div class="container">
+        <h1>Kode Etik Jurnalistik</h1>
+        <p class="paragraf">
+          Kemerdekaan berpendapat, berekspresi, dan pers adalah hak asasi
+          manusia yang dilindungi Pancasila, Undang-Undang Dasar 1945, dan
+          Deklarasi Universal Hak Asasi Manusia PBB. Kemerdekaan pers adalah
+          sarana masyarakat untuk memperoleh informasi dan berkomunikasi, guna
+          memenuhi kebutuhan hakiki dan meningkatkan kualitas kehidupan manusia.
+          Dalam mewujudkan kemerdekaan pers itu, wartawan Indonesia juga
+          menyadari adanya kepentingan bangsa, tanggung jawab sosial,
+          keberagaman masyarakat, dan norma-norma agama.
+        </p>
+        <p class="paragraf">
+          Dalam melaksanakan fungsi, hak, kewajiban dan peranannya, pers
+          menghormati hak asasi setiap orang, karena itu pers dituntut
+          profesional dan terbuka untuk dikontrol oleh masyarakat.
+        </p>
+        <p class="paragraf-akhir">
+          Untuk menjamin kemerdekaan pers dan memenuhi hak publik untuk
+          memperoleh informasi yang benar, wartawan Indonesia memerlukan
+          landasan moral dan etika profesi sebagai pedoman operasional dalam
+          menjaga kepercayaan publik dan menegakkan integritas serta
+          profesionalisme. Atas dasar itu, wartawan Indonesia menetapkan dan
+          menaati Kode Etik Jurnalistik:
+        </p>
+        <p class="isi-paragraf"><b>Pasal 1</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia bersikap independen, menghasilkan berita yang
+            akurat, berimbang, dan tidak beritikad buruk.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Independen berarti memberitakan peristiwa atau fakta sesuai dengan
+            suara hati nurani tanpa campur tangan, paksaan, dan intervensi dari
+            pihak lain termasuk pemilik perusahaan pers.
+          </li>
+          <li>
+            Akurat berarti dipercaya benar sesuai keadaan objektif ketika
+            peristiwa terjadi.
+          </li>
+          <li>Berimbang berarti semua pihak mendapat kesempatan setara.</li>
+          <li class="paragraf-akhir">
+            Tidak beritikad buruk berarti tidak ada niat secara sengaja dan
+            semata-mata untuk menimbulkan kerugian pihak lain.
+          </li>
+          <p></p>
+        </ol>
+        <p class="isi-paragraf"><b>Pasal 2</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia menempuh cara-cara yang profesional dalam
+            melaksanakan tugas jurnalistik.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>menunjukkan identitas diri kepada narasumber;</li>
+          <li>menghormati hak privasi;</li>
+          <li>tidak menyuap;</li>
+          <li>menghasilkan berita yang faktual dan jelas sumbernya;</li>
+          <li>
+            rekayasa pengambilan dan pemuatan atau penyiaran gambar, foto, suara
+            dilengkapi dengan keterangan tentang sumber dan ditampilkan secara
+            berimbang;
+          </li>
+          <li>
+            menghormati pengalaman traumatik narasumber dalam penyajian gambar,
+            foto, suara;
+          </li>
+          <li>
+            tidak melakukan plagiat, termasuk menyatakan hasil liputan wartawan
+            lain sebagai karya sendiri;
+          </li>
+          <li class="paragraf-akhir">
+            penggunaan cara-cara tertentu dapat dipertimbangkan untuk peliputan
+            berita investigasi bagi kepentingan publik.
+          </li>
+        </ol>
+        <p></p>
+
+        <p class="isi-paragraf"><b>Pasal 3</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia selalu menguji informasi, memberitakan secara
+            berimbang, tidak mencampurkan fakta dan opini yang menghakimi, serta
+            menerapkan asas praduga tak bersalah.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Menguji informasi berarti melakukan check and recheck tentang
+            kebenaran informasi itu.
+          </li>
+          <li>
+            Berimbang adalah memberikan ruang atau waktu pemberitaan kepada
+            masing-masing pihak secara proporsional.
+          </li>
+          <li>
+            Opini yang menghakimi adalah pendapat pribadi wartawan. Hal ini
+            berbeda dengan opini interpretatif, yaitu pendapat yang berupa
+            interpretasi wartawan atas fakta.
+          </li>
+          <li class="paragraf-akhir">
+            Asas praduga tak bersalah adalah prinsip tidak menghakimi seseorang.
+          </li>
+        </ol>
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 4</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia tidak membuat berita bohong, fitnah, sadis, dan
+            cabul.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Bohong berarti sesuatu yang sudah diketahui sebelumnya oleh wartawan
+            sebagai hal yang tidak sesuai dengan fakta yang terjadi.
+          </li>
+          <li>
+            Fitnah berarti tuduhan tanpa dasar yang dilakukan secara sengaja
+            dengan niat buruk.
+          </li>
+          <li>Sadis berarti kejam dan tidak mengenal belas kasihan.</li>
+          <li>
+            Cabul berarti penggambaran tingkah laku secara erotis dengan foto,
+            gambar, suara, grafis atau tulisan yang semata-mata untuk
+            membangkitkan nafsu birahi.
+          </li>
+          <li class="paragraf-akhir">
+            Dalam penyiaran gambar dan suara dari arsip, wartawan mencantumkan
+            waktu pengambilan gambar dan suara.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 5</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia tidak menyebutkan dan menyiarkan identitas
+            korban kejahatan susila dan tidak menyebutkan identitas anak yang
+            menjadi pelaku kejahatan.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Identitas adalah semua data dan informasi yang menyangkut diri
+            seseorang yang memudahkan orang lain untuk melacak.
+          </li>
+          <li class="paragraf-akhir">
+            Anak adalah seorang yang berusia kurang dari 16 tahun dan belum
+            menikah.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 6</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia tidak menyalahgunakan profesi dan tidak menerima
+            suap.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Menyalahgunakan profesi adalah segala tindakan yang mengambil
+            keuntungan pribadi atas informasi yang diperoleh saat bertugas
+            sebelum informasi tersebut menjadi pengetahuan umum.
+          </li>
+          <li class="paragraf-akhir">
+            Suap adalah segala pemberian dalam bentuk uang, benda atau fasilitas
+            dari pihak lain yang mempengaruhi independensi.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 7</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia memiliki hak tolak untuk melindungi narasumber
+            yang tidak bersedia diketahui identitas maupun keberadaannya,
+            menghargai ketentuan embargo, informasi latar belakang, dan off the
+            record sesuai dengan kesepakatan.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Hak tolak adalak hak untuk tidak mengungkapkan identitas dan
+            keberadaan narasumber demi keamanan narasumber dan keluarganya.
+          </li>
+          <li>
+            Embargo adalah penundaan pemuatan atau penyiaran berita sesuai
+            dengan permintaan narasumber.
+          </li>
+          <li>
+            Informasi latar belakang adalah segala informasi atau data dari
+            narasumber yang disiarkan atau diberitakan tanpa menyebutkan
+            narasumbernya.
+          </li>
+          <li class="paragraf-akhir">
+            Off the record adalah segala informasi atau data dari narasumber
+            yang tidak boleh disiarkan atau diberitakan.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 8</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia tidak menulis atau menyiarkan berita berdasarkan
+            prasangka atau diskriminasi terhadap seseorang atas dasar perbedaan
+            suku, ras, warna kulit, agama, jenis kelamin, dan bahasa serta tidak
+            merendahkan martabat orang lemah, miskin, sakit, cacat jiwa atau
+            cacat jasmani.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Prasangka adalah anggapan yang kurang baik mengenai sesuatu sebelum
+            mengetahui secara jelas.
+          </li>
+          <li class="paragraf-akhir">Diskriminasi adalah pembedaan perlakuan.</li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 9</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia menghormati hak narasumber tentang kehidupan
+            pribadinya, kecuali untuk kepentingan publik.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Menghormati hak narasumber adalah sikap menahan diri dan
+            berhati-hati.
+          </li>
+          <li class="paragraf-akhir">
+            Kehidupan pribadi adalah segala segi kehidupan seseorang dan
+            keluarganya selain yang terkait dengan kepentingan publik.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 10</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia segera mencabut, meralat, dan memperbaiki berita
+            yang keliru dan tidak akurat disertai dengan permintaan maaf kepada
+            pembaca, pendengar, dan atau pemirsa.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Segera berarti tindakan dalam waktu secepat mungkin, baik karena ada
+            maupun tidak ada teguran dari pihak luar.
+          </li>
+          <li class="paragraf-akhir">
+            Permintaan maaf disampaikan apabila kesalahan terkait dengan
+            substansi pokok.
+          </li>
+        </ol>
+
+        <p></p>
+        <p class="isi-paragraf"><b>Pasal 11</b></p>
+        <p class="isi-paragraf">
+          <b
+            >Wartawan Indonesia melayani hak jawab dan hak koreksi secara
+            proporsional.</b
+          >
+        </p>
+        <p class="isi-paragraf"><b>Penafsiran</b></p>
+        <ol class="a">
+          <li>
+            Hak jawab adalah hak seseorang atau sekelompok orang untuk
+            memberikan tanggapan atau sanggahan terhadap pemberitaan berupa
+            fakta yang merugikan nama baiknya.
+          </li>
+          <li>
+            Hak koreksi adalah hak setiap orang untuk membetulkan kekeliruan
+            informasi yang diberitakan oleh pers, baik tentang dirinya maupun
+            tentang orang lain.
+          </li>
+          <li class="paragraf-akhir">
+            Proporsional berarti setara dengan bagian berita yang perlu
+            diperbaiki.
+          </li>
+        </ol>
+
+        <p class="paragraf">
+          Penilaian akhir atas pelanggaran kode etik jurnalistik dilakukan Dewan
+          Pers. Sanksi atas pelanggaran kode etik jurnalistik dilakukan oleh
+          organisasi wartawan dan atau perusahaan pers.
+        </p>
+
+        <p class="paragraf">
+          Jakarta, Selasa, 14 Maret 2006 (Kode Etik Jurnalistik ditetapkan Dewan
+          Pers melalui Peraturan Dewan Pers Nomor: 6/Peraturan-DP/V/2008 Tentang
+          Pengesahan Surat Keputusan Dewan Pers Nomor 03/SK-DP/III/2006 tentang
+          Kode Etik Jurnalistik Sebagai Peraturan Dewan Pers)
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ikuti Kami</p>
+      <div class="socials">
+        <a
+          href="https://instagram.com/spill_detik?igshid=MTBxYzloYjJtcmZqZA=="
+          target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/spilldetik" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61553584762059&mibextid=ZbWKwL"
+          target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="contact.html">Kontak</a>
+        <a href="tentang_kami.html">Tentang Kami</a>
+        <a href="kode_etik.html">Kode Etik</a>
+        <a href="form_pengaduan.html">Form Pengaduan</a>
+        <a href="mediasiber.html">Pedoman Media Siber</a>
+      </div>
+
+      <div class="credit">
+        <p>Copyright by Group 30</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+<script src="./js/script.js"></script>
+  </body>
+</html>
