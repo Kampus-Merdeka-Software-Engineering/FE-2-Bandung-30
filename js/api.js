@@ -279,7 +279,7 @@ const displayHome = async () => {
   const categories = [
     "otomotif",
     "olahraga",
-    "lifestyle",
+    "gaya hidup",
     "hiburan",
     "teknologi",
     "politik",
