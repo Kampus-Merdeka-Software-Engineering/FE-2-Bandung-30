@@ -16,7 +16,7 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -122,107 +122,98 @@
       </div>
     </nav>
 
-    <section>
-      <div class="container">
-        <h1>Kontak Kami</h1>
-        <p class="paragraf">
-          Ada Pertanyaan atau komentar? Cukup tulis pesan kepada kami!
-        </p>
-
-        <div class="row">
-          <div class="content-left">
-            <h2>Informasi Kontak</h2>
-            <h4>Beritahu kami jika kamu mengalami kendala</h4>
-            <div class="kontak">
-              <a href="#" id="phone"><i data-feather="phone"></i></a>
-              <p>+628987528332</p>
-            </div>
-            <div class="kontak">
-              <a href="#" id="mail"><i data-feather="mail"></i></a>
-              <p>Support@languago.com</p>
-            </div>
-            <div class="kontak">
-              <a href="#" id="map"><i data-feather="map"></i></a>
-              <p>Jl. DR. Ide Anak Agung Gde Agung, Jakarta 12950</p>
-            </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2770232876437!2d106.823853073896!3d-6.227160160983541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4734a8de3%3A0xb2ad7eacc88d7f3e!2sRevoU!5e0!3m2!1sid!2sid!4v1693896307336!5m2!1sid!2sid"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+    <section class="container" id="home">
+      <section class="trending-articles-container">
+        <section class="trending-articles">
+          <div class="main-article" id="container">
+        
           </div>
-          <div class="content-right">
-            <form action="/submit" method="post" onsubmit="submitContactUs(event)">
-              <label for="name">Nama Lengkap:</label>
-              <input
-                type="text"
-                id="name"
-                name="namalengkap"
-                placeholder="Your name.."
-                required
-              />
 
-              <label for="name">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email.."
-                required
-              />
+          <section class="secondary-articles" id="secondary-article">
 
-              <label for="subject">Pesan:</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 170px"
-                required
-              ></textarea>
+          </section>
+        </section>
 
-              <button>Submit</button>
-            </form>
+        <aside class="article-list">
+          <div class="box-header">
+            <h2 class="box-title">Berita Terpopuler</h2>
           </div>
-        </div>
+        
+        </aside>
+      </section>
+
+      <div class="section-header">
+        <h2>Berita Utama</h2>
       </div>
+
+      <section class="berita-utama">
+    
+      </section>
+
+      <div class="section-header">
+        <h2>Berita Terbaru</h2>
+      </div>
+
+      <section class="berita">
+        <div class="berita-terbaru">
+  
+      </div>
+      <div class="berita-terbaru">
+
+          </div>
+      </div>
+      <div class="berita-terbaru">
+ 
+      </div>
+      <div class="berita-terbaru">
+
+      </div>
+      </section>
+
+      <div class="section-header">
+        <h2>Rekomendasi Berita</h2>
+      </div>
+
+      <section class="rekomendasi-berita">
+       
+      </section>
     </section>
 
-    <footer>
-      <p>Ikuti Kami</p>
-      <div class="socials">
-        <a
-          href="https://instagram.com/spill_detik?igshid=MTBxYzloYjJtcmZqZA=="
-          target="_blank"
-          ><i data-feather="instagram"></i
-        ></a>
-        <a href="https://x.com/spilldetik" target="_blank"
-          ><i data-feather="twitter"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=61553584762059&mibextid=ZbWKwL"
-          target="_blank"
-          ><i data-feather="facebook"></i
-        ></a>
-      </div>
-
-      <div class="links">
-        <a href="contact.html">Kontak</a>
-        <a href="tentang_kami.html">Tentang Kami</a>
-        <a href="kode_etik.html">Kode Etik</a>
-        <a href="form_pengaduan.html">Form Pengaduan</a>
-        <a href="mediasiber.html">Pedoman Media Siber</a>
-      </div>
-
-      <div class="credit">
-        <p>Copyright by Group 30</a>. | &copy; 2023.</p>
-      </div>
-    </footer>
+      <footer>
+        <p>Ikuti Kami</p>
+        <div class="socials">
+          <a
+            href="https://instagram.com/spill_detik?igshid=MTBxYzloYjJtcmZqZA=="
+            target="_blank"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://x.com/spilldetik" target="_blank"
+            ><i data-feather="twitter"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61553584762059&mibextid=ZbWKwL"
+            target="_blank"
+            ><i data-feather="facebook"></i
+          ></a>
+        </div>
+  
+        <div class="links">
+          <a href="contact.html">Kontak</a>
+          <a href="tentang_kami.html">Tentang Kami</a>
+          <a href="kode_etik.html">Kode Etik</a>
+          <a href="form_pengaduan.html">Form Pengaduan</a>
+          <a href="media_siber.html">Pedoman Media Siber</a>
+        </div>
+  
+        <div class="credit">
+          <p>Copyright by Group 30</a>. | &copy; 2023.</p>
+        </div>
+      </footer>
 
 </body>
 <script src="./js/script.js"></script>
 <script src="./js/api.js"></script>
-   
+<script>displayHome();</script>
 <script>
   feather.replace();
 </script>

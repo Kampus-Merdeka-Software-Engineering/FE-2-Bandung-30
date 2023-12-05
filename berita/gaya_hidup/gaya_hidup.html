@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill Detik</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Public+Sans:ital,wght@0,100;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="../../css/berita/gaya_hidup/gaya_hidup.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="../../index.html" class="navbar-logo"><img src="../../image/logo-2.png" alt="logo"></a>
+
+      <div class="navbar-nav">
+        <a href="../../index.html">Home</a>
+
+      <!-- Dropdown Politik -->
+        
+      <div class="dropdown" id="politikDropdown">
+        <a href="../../berita/politik/politik.html" class="navbar-item" id="politikLink">Politik</a>
+        <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="../../berita/politik/sub_info_politik.html">Info Politik</a>
+          <a href="../../berita/politik/sub_hukum.html">Hukum & Kriminal</a>
+          <a href="../../berita/politik/sub_peristiwa.html">Peristiwa</a>
+        </div>
+      </div>
+
+        <!-- Dropdown Ekonomi -->
+        <div class="dropdown" id="economyDropdown">
+          <a href="../../berita/ekonomi/ekonomi.html" class="navbar-item" id="economyLink">Ekonomi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="../../berita/ekonomi/sub_keuangan.html">Keuangan</a>
+              <a href="../../berita/ekonomi/sub_energi.html">Energi</a>
+              <a href="../../berita/ekonomi/sub_bisnis.html">Bisnis</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Olahraga -->
+        <div class="dropdown" id="sportsDropdown">
+          <a href="../../berita/olahraga/olahraga.html" class="navbar-item" id="sportsLink">Olahraga</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="../../berita/olahraga/sub_sepakbola.html">Sepakbola</a>
+              <a href="../../berita/olahraga/sub_motogp.html">Moto GP</a>
+              <a href="../../berita/olahraga/sub_badminton.html">Badminton</a>
+          </div>
+        </div>
+
+
+        <!-- Dropdown Teknologi -->
+        <div class="dropdown" id="technologyDropdown">
+          <a href="../../berita/teknologi/teknologi.html" class="navbar-item" id="technologyLink">Teknologi</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+            <a href="../../berita/teknologi/sub_teknologi_informasi.html">Teknologi Informasi</a>
+            <a href="../../berita/teknologi/sub_sains.html">Sains</a>
+            <a href="../../berita/teknologi/sub_teknologi_informasi.html">Telekomunikasi</a>
+        </div>
+      </div>
+
+        <!-- Dropdown Otomotif -->
+        <div div class="dropdown" id="automotiveDropdown">
+          <a href="../../berita/otomotif/otomotif.html" class="navbar-item" id="automotiveLink">Otomotif</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="../../berita/otomotif/sub_tren.html">Tren</a>
+              <a href="../../berita/otomotif/sub_mobil.html">Mobil</a>
+              <a href="../../berita/otomotif/sub_motor.html">Motor</a>
+            </div>
+          </div>
+
+        <!-- Dropdown Hiburan -->
+        <div class="dropdown" id="entertainmentDropdown">
+          <a href="../../berita/hiburan/hiburan.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
+          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="../../berita/hiburan/sub_film.html">Film</a>
+            <a href="../../berita/hiburan/sub_musik.html">Musik</a>
+            <a href="../../berita/hiburan/sub_selebriti.html">Selebriti</a>
+          </div>
+        </div>
+
+          <!-- Dropdown Gaya Hidup -->
+          <div class="dropdown" id="lifestyleDropdown">
+            <a href="../../berita/gaya_hidup/gaya_hidup.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
+            <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="../../berita/gaya_hidup/sub_health.html">Health</a>
+              <a href="../../berita/gaya_hidup/sub_food.html">Food</a>
+              <a href="../../berita/gaya_hidup/sub_travel.html">Travel</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari Berita..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
+
+    <section class="container" id="home">
+      <div class="top-headlines">
+        <h3 class="headlines-type">Gaya Hidup</h3>
+        <h3 class="row">|</h3>
+        <h3 class="headlines-title">
+            <a href="../../berita/gaya_hidup/sub_health.html">Health</a>
+        </h3>
+        <h3 class="headlines-title">
+          <a href="../../berita/gaya_hidup/sub_food.html">Food</a>
+        </h3>
+        <h3 class="headlines-title">
+          <a href="../../berita/gaya_hidup/sub_travel.html">Travel</a>
+        </h3>
+      </div>
+      <section class="trending-articles-container">
+        <section class="trending-articles">
+          <div class="main-article" id="container">
+        
+          </div>
+
+          <section class="secondary-articles" id="secondary-articles">
+
+          </section>
+        </section>
+
+        <aside class="article-list">
+          <div class="box-header">
+            <h2 class="box-title">Berita Terpopuler</h2>
+          </div>
+      
+        </aside>
+      </section>
+
+      <div class="section-header">
+        <h2>Berita Terbaru</h2>
+      </div>
+
+      <section class="berita">
+        <div class="berita-terbaru">
+  
+      </div>
+      <div class="berita-terbaru">
+
+          </div>
+      </div>
+      <div class="berita-terbaru">
+ 
+      </div>
+      <div class="berita-terbaru">
+
+      </div>
+      </section>
+    </section>
+
+    <footer>
+      <p>Ikuti Kami</p>
+      <div class="socials">
+        <a
+          href="https://instagram.com/spill_detik?igshid=MTBxYzloYjJtcmZqZA=="
+          target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/spilldetik" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61553584762059&mibextid=ZbWKwL"
+          target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="../../contact.html">Kontak</a>
+        <a href="../../tentang_kami.html">Tentang Kami</a>
+        <a href="../../kode_etik.html">Kode Etik</a>
+        <a href="../../form_pengaduan.html">Form Pengaduan</a>
+        <a href="../../media_siber.html">Pedoman Media Siber</a>
+      </div>
+
+      <div class="credit">
+        <p>Copyright by Group 30</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+
+</body>
+<script src="../../js/script.js"></script>
+<script src="../../js/api.js"></script>
+<script>
+ displayGayaHidup();
+</script>
+<script>
+  feather.replace();
+</script>
+</html>

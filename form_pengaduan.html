@@ -17,6 +17,9 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="./css/form_pengaduan.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
 
   <body>
@@ -24,97 +27,85 @@
       <a href="index.html" class="navbar-logo"><img src="./image/logo-2.png" alt="logo"></a>
 
       <div class="navbar-nav">
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
 
-        <!-- Dropdown Nasional -->
+      <!-- Dropdown Politik -->
         
-        <div class="dropdown" id="nationalDropdown">
-          <a href="national.html" class="navbar-item" id="nationalLink">Nasional</a>
-          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="./national/politik.html">Politik</a>
-            <a href="./national/hukum.html">Hukum & Kriminal</a>
-            <a href="./national/peristiwa.html">Peristiwa</a>
-          </div>
+      <div class="dropdown" id="politikDropdown">
+        <a href="./berita/politik/politik.html" class="navbar-item" id="politikLink">Politik</a>
+        <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="./berita/politik/sub_info_politik.html">Info Politik</a>
+          <a href="./berita/politik/sub_hukum.html">Hukum & Kriminal</a>
+          <a href="./berita/politik/sub_peristiwa.html">Peristiwa</a>
         </div>
-
-        <!-- Dropdown Internasional -->
-        <div class="dropdown" id="internationalDropdown">
-          <a href="international.html" class="navbar-item" id="internationalLink">Internasional</a>
-          <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="./international/asean.html">Asean</a>
-            <a href="./international/asiaPasifik.html">Asia Pasifik</a>
-            <a href="./international/timurTengah.html">Timur Tengah</a>
-            <a href="./international/eropaAmerika.html">Eropa Amerika</a>
-          </div>
-        </div>
+      </div>
 
         <!-- Dropdown Ekonomi -->
         <div class="dropdown" id="economyDropdown">
-          <a href="ekonomi.html" class="navbar-item" id="economyLink">Ekonomi</a>
+          <a href="./berita/ekonomi/ekonomi.html" class="navbar-item" id="economyLink">Ekonomi</a>
           <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
             <div class="dropdown-menu">
-              <a href="./ekonomi/keuangan.html">Keuangan</a>
-              <a href="./ekonomi/energi.html">Energi</a>
-              <a href="./ekonomi/bisnis.html">Bisnis</a>
+              <a href="./berita/ekonomi/sub_keuangan.html">Keuangan</a>
+              <a href="./berita/ekonomi/sub_energi.html">Energi</a>
+              <a href="./berita/ekonomi/sub_bisnis.html">Bisnis</a>
           </div>
         </div>
 
 
         <!-- Dropdown Olahraga -->
         <div class="dropdown" id="sportsDropdown">
-          <a href="olahraga.html" class="navbar-item" id="sportsLink">Olahraga</a>
+          <a href="./berita/olahraga/olahraga.html" class="navbar-item" id="sportsLink">Olahraga</a>
           <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
             <div class="dropdown-menu">
-              <a href="./olahraga/sepakbola.html">Sepakbola</a>
-              <a href="./olahraga/motogp.html">Moto GP</a>
-              <a href="./olahraga/badminton.html">Badminton</a>
+              <a href="./berita/olahraga/sub_sepakbola.html">Sepakbola</a>
+              <a href="./berita/olahraga/sub_motogp.html">Moto GP</a>
+              <a href="./berita/olahraga/sub_badminton.html">Badminton</a>
           </div>
         </div>
 
 
         <!-- Dropdown Teknologi -->
         <div class="dropdown" id="technologyDropdown">
-          <a href="teknologi.html" class="navbar-item" id="technologyLink">Teknologi</a>
+          <a href="./berita/teknologi/teknologi.html" class="navbar-item" id="technologyLink">Teknologi</a>
           <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
             <div class="dropdown-menu">
-            <a href="./teknologi/ti.html">Teknologi Informasi</a>
-            <a href="./teknologi/sains.html">Sains</a>
-            <a href="./teknologi/telekomunikasi.html">Telekomunikasi</a>
+            <a href="./berita/teknologi/sub_teknologi_informasi.html">Teknologi Informasi</a>
+            <a href="./berita/teknologi/sub_sains.html">Sains</a>
+            <a href="./berita/teknologi/sub_teknologi_informasi.html">Telekomunikasi</a>
         </div>
       </div>
 
         <!-- Dropdown Otomotif -->
         <div div class="dropdown" id="automotiveDropdown">
-          <a href="otomotif.html" class="navbar-item" id="automotiveLink">Otomotif</a>
+          <a href="./berita/otomotif/otomotif.html" class="navbar-item" id="automotiveLink">Otomotif</a>
           <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
             <div class="dropdown-menu">
-              <a href="./otomotif/tren.html">Tren</a>
-              <a href="./otomotif/mobil.html">Mobil</a>
-              <a href="./otomotif/motor.html">Motor</a>
+              <a href="./berita/otomotif/sub_tren.html">Tren</a>
+              <a href="./berita/otomotif/sub_mobil.html">Mobil</a>
+              <a href="./berita/otomotif/sub_motor.html">Motor</a>
             </div>
           </div>
 
         <!-- Dropdown Hiburan -->
         <div class="dropdown" id="entertainmentDropdown">
-          <a href="hiburan.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
+          <a href="./berita/hiburan/hiburan.html" class="navbar-item" id="entertainmentLink">Hiburan</a>
           <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
           <div class="dropdown-menu">
-            <a href="./hiburan/film.html">Film</a>
-            <a href="./hiburan/musik.html">Musik</a>
-            <a href="./hiburan/selebriti.html">Selebriti</a>
+            <a href="./berita/hiburan/sub_film.html">Film</a>
+            <a href="./berita/hiburan/sub_musik.html">Musik</a>
+            <a href="./berita/hiburan/sub_selebriti.html">Selebriti</a>
           </div>
         </div>
 
           <!-- Dropdown Gaya Hidup -->
           <div class="dropdown" id="lifestyleDropdown">
-            <a href="gayahidup.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
+            <a href="./berita/gaya_hidup/gaya_hidup.html" class="navbar-item" id="lifestyleLink">Gaya Hidup</a>
             <a href="#" class="dropdown-toggle"><i data-feather="chevron-down"></i></a>
             <div class="dropdown-menu">
-              <a href="./gayahidup/health.html">Health</a>
-              <a href="./gayahidup/food.html">Food</a>
-              <a href="./gayahidup/travel.html">Travel</a>
+              <a href="./berita/gaya_hidup/sub_health.html">Health</a>
+              <a href="./berita/gaya_hidup/sub_food.html">Food</a>
+              <a href="./berita/gaya_hidup/sub_travel.html">Travel</a>
             </div>
           </div>
       </div>
@@ -253,10 +244,10 @@
       </div>
     </footer>
 
-    <script>
-      feather.replace();
-    </script>
-
+</body>
 <script src="./js/script.js"></script>
-  </body>
+<script src="./js/api.js"></script>
+<script>
+  feather.replace();
+</script>
 </html>

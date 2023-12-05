@@ -1,0 +1,263 @@
+.content {
+  font-family: "Open Sans", sans-serif;
+  color: #191717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 262vh;
+}
+
+.container {
+  width: 70%;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.content .p1 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.content .p2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.content .p3 {
+  font-size: 16px;
+  list-style-type: lower-alpha;
+  margin-bottom: 4px;
+}
+
+.content .paragraf {
+  margin-bottom: 12px;
+}
+
+.content .judul-paragraf {
+  margin-bottom: 12px;
+}
+
+.content .paragraf-abjad {
+  list-style-type: lower-alpha;
+  margin-bottom: 4px;
+}
+
+#last {
+  margin-bottom: 16px;
+}
+
+.content .paragraf-number {
+  list-style-type: decimal;
+  margin-bottom: 4px;
+}
+
+.content .lokasi {
+  margin-top: 70px;
+}
+
+.content .ttd {
+  margin-top: 40px;
+}
+
+b {
+  font-weight: 700;
+}
+
+ol.a {
+  margin-left: 20px;
+  list-style-type: decimal;
+  font-size: 16px;
+}
+
+ol.b {
+  margin-left: 20px;
+  list-style-type: decimal;
+  font-size: 16px;
+}
+
+ol.c {
+  margin-left: 30px;
+  list-style-type: decimal;
+  font-size: 16px;
+}
+
+ol.d {
+  margin-left: 30px;
+  list-style-type: decimal;
+  font-size: 16px;
+}
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 80%;
+    right: 80px;
+  }
+
+  .content h1 {
+    margin-top: 120px;
+  }
+
+  .content .ttd {
+    margin-bottom: 36px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 16px 0 24px;
+    /* Adjust padding for better responsiveness */
+  }
+}
+
+@media (max-width: 1280px) {
+  .content h1 {
+    margin-top: 120px;
+  }
+
+  .content .ttd {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 758px) {
+  .content h1 {
+    font-size: 32px;
+  }
+  .content .p1 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .p2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .p3 {
+    font-size: 14px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  .content .paragraf {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .judul-paragraf {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .paragraf-abjad {
+    font-size: 14px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  #last {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .content .paragraf-number {
+    font-size: 14px;
+    list-style-type: decimal;
+    margin-bottom: 4px;
+  }
+
+  .content .lokasi {
+    font-size: 14px;
+    margin-top: 70px;
+  }
+
+  .content .ttd {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content .p1 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .p2 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .p3 {
+    font-size: 12px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  .content .paragraf {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .judul-paragraf {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .paragraf-abjad {
+    font-size: 12px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  #last {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .content .paragraf-number {
+    font-size: 12px;
+    list-style-type: decimal;
+    margin-bottom: 4px;
+  }
+
+  .content .lokasi {
+    font-size: 12px;
+    margin-top: 70px;
+  }
+
+  .content .ttd {
+    font-size: 12px;
+    margin-bottom: 36px;
+  }
+}

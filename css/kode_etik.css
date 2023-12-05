@@ -1,0 +1,200 @@
+.content {
+  font-family: "Open Sans", sans-serif;
+  color: #191717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 373vh;
+}
+
+.container {
+  width: 70%;
+}
+
+.content .container h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.content .p1 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.content .p2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.content .p3 {
+  font-size: 16px;
+  list-style-type: lower-alpha;
+  margin-bottom: 4px;
+}
+
+.content li {
+  font-size: 16px;
+}
+
+.content .paragraf {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content .isi-paragraf {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content .paragraf-akhir {
+  font-size: 16px;
+  margin-bottom: 42px;
+}
+
+b {
+  font-weight: 600;
+}
+
+ol.a {
+  margin-left: 40px;
+  list-style-type: lower-alpha;
+}
+
+@media (max-width: 1280px) {
+  .content h1 {
+    margin-top: 120px;
+  }
+
+  .content .ttd {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 758px) {
+  .content .container h1 {
+    font-size: 32px;
+  }
+
+  .content li {
+    font-size: 14px;
+  }
+
+  .content .p1 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .p2 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .p3 {
+    font-size: 14px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  .content .paragraf {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .isi-paragraf {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .content .paragraf-akhir {
+    font-size: 14px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  #last {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .content .hm {
+    font-size: 14px;
+    list-style-type: decimal;
+    margin-bottom: 4px;
+  }
+
+  .content .lokasi {
+    font-size: 14px;
+    margin-top: 70px;
+  }
+
+  .content .ttd {
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  .content .container h1 {
+    font-size: 30px;
+  }
+
+  .content li {
+    font-size: 12px;
+  }
+
+  .content .p1 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .p2 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .p3 {
+    font-size: 12px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  .content .paragraf {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .isi-paragraf {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .content .paragraf-akhir {
+    font-size: 12px;
+    list-style-type: lower-alpha;
+    margin-bottom: 4px;
+  }
+
+  #last {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .content .hm {
+    font-size: 12px;
+    list-style-type: decimal;
+    margin-bottom: 4px;
+  }
+
+  .content .lokasi {
+    font-size: 12px;
+    margin-top: 70px;
+  }
+
+  .content .ttd {
+    font-size: 12px;
+    margin-bottom: 36px;
+  }
+}
