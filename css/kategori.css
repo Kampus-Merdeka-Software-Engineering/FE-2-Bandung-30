@@ -1,12 +1,14 @@
 .container {
   font-family: "Open Sans", sans-serif;
   color: #191717;
-  min-height: 275vh;
+  min-height: 277vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 200px;
+  zoom: 80%;
 }
 
 .top-headlines {
@@ -88,6 +90,7 @@ img {
 .publish-date {
   color: gray;
 }
+
 /*--------------------- section - main article -------------------------*/
 
 .main-article {
@@ -319,15 +322,13 @@ img {
 }
 
 .berita-article,
-.lotus-section-article,
--article {
+.lotus-section-article {
   width: 100%;
   display: flex;
 }
 
 .berita-article-info,
-.lotus-section-article-info,
--article-info {
+.lotus-section-article-info {
   margin: 1em 3em;
   display: flex;
   flex-direction: column;
@@ -337,7 +338,7 @@ img {
 
 .berita-article-info .article-header,
 .lotus-section-article-info .article-header,
--article-info .article-header {
+.article-header {
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.2;
@@ -345,13 +346,13 @@ img {
 
 .berita-article-info .article-header:hover,
 .lotus-section-article-info .article-header:hover,
--article-info .article-header:hover {
+.article-header:hover {
   color: #2f1412;
 }
 
 .berita-article-info .article-time,
 .lotus-section-article-info .article-time,
--article-info .article-time {
+.article-time {
   margin-top: 1em;
   color: #ad2139;
   font-weight: 100;
@@ -367,8 +368,7 @@ img {
   }
 
   .berita-article,
-  .lotus-section-article,
-  -article {
+  .lotus-section-article {
     width: 100%;
   }
 }

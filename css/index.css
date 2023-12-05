@@ -1,4 +1,6 @@
 .container {
+  padding-top: 200px;
+  zoom: 80%;
   font-family: "Open Sans", sans-serif;
   color: hsl(0, 4%, 9%);
   min-height: 360vh;
