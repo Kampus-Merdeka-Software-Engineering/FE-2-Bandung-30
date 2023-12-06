@@ -342,6 +342,7 @@ img {
   width: 30%;
   height: 85%;
   margin: 1em 0;
+  object-fit: contain;
 }
 
 .berita-article,
