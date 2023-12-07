@@ -23,19 +23,22 @@ const displayData = (data) => {
   const mainArticle = document.createElement("div");
   mainArticle.classList.add("main-article");
 
+  const mainLink = document.createElement("a");
+  mainLink.href = `../../detail.html?id=${data[0].id}`;
+  mainLink.classList.add("article-link");
+  mainArticle.appendChild(mainLink);
+
   const mainImage = document.createElement("img");
   mainImage.classList.add("image-main-article");
   mainImage.src = data[0].img_url;
-  mainArticle.appendChild(mainImage);
+  mainLink.appendChild(mainImage);
 
   const mainTitle = document.createElement("h1");
   mainTitle.classList.add("news-title");
-
-  const titleText = document.createTextNode(data[0].title);
-  mainTitle.appendChild(titleText);
+  mainTitle.textContent = data[0].title;
+  mainLink.appendChild(mainTitle);
 
   const mainDesc = document.createElement("p");
-  mainDesc.classList.add("main-description");
   mainDesc.textContent = data[0].desc;
   mainTitle.appendChild(mainDesc);
 
@@ -60,7 +63,7 @@ const displayData = (data) => {
 
   mainTitle.appendChild(categoryAndDateParagraph);
 
-  mainArticle.appendChild(mainTitle);
+  mainArticle.appendChild(mainLink);
   container.appendChild(mainArticle);
 
   //display news section
@@ -74,9 +77,15 @@ const displayData = (data) => {
     const newsSectionArticle = document.createElement("article");
     newsSectionArticle.classList.add("berita-article");
 
+    // Create an anchor element
+    const articleLink = document.createElement("a");
+
+    // Set the href attribute to the desired URL
+    articleLink.href = `../../detail.html?id=${data[i].id}`;
+
     const articleImage = document.createElement("img");
     articleImage.src = data[i].img_url;
-    newsSectionArticle.appendChild(articleImage);
+    articleLink.appendChild(articleImage);
 
     const articleTitle = document.createElement("h1");
     articleTitle.classList.add("terbaru-title");
@@ -98,7 +107,9 @@ const displayData = (data) => {
     combinedInfoParagraph.appendChild(publishDateSpan);
 
     articleTitle.appendChild(combinedInfoParagraph);
-    newsSectionArticle.appendChild(articleTitle);
+    articleLink.appendChild(articleTitle);
+
+    newsSectionArticle.appendChild(articleLink);
 
     beritaTerbaru.appendChild(newsSectionArticle);
     newsSection.appendChild(beritaTerbaru);

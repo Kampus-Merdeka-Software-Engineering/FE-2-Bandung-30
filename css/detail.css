@@ -1,0 +1,47 @@
+.container {
+    zoom: 80%;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 4%, 9%);
+    min-height: 125vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    text-align: left;
+    display: flex;
+    margin-top: 20px;
+    width: 35%;
+    border: 1px solid black;
+  }
+  
+  main div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main img {
+    width: 790px;
+    height: 400px;
+    margin: 20px;
+  }
+  
+  main h1 {
+    margin: 16px;
+  }
+  
+  main p {
+    margin: 8px 20px;
+  }
+  
+  main a {
+    color: #181818;
+    margin-bottom: 20px;
+  }
+  
+  main a:hover {
+    color: #ad2139;
+  }

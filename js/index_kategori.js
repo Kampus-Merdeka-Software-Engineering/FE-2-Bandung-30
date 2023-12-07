@@ -23,7 +23,7 @@ const displayData = (data) => {
   mainArticle.classList.add("main-article");
 
   const mainLink = document.createElement("a");
-  mainLink.href = `../../detail.html?id=${data[0].id}`;
+  mainLink.href = `./detail.html?id=${data[0].id}`;
   mainLink.classList.add("article-link");
   mainArticle.appendChild(mainLink);
 
@@ -75,7 +75,7 @@ const displayData = (data) => {
 
     // Tambahkan elemen <a> di sekitar gambar dan judul sekunder
     const secondaryLink = document.createElement("a");
-    secondaryLink.href = `../../detail.html?id=${data[i].id}`;
+    secondaryLink.href = `./detail.html?id=${data[i].id}`;
     secondaryLink.classList.add("article-link");
     secondaryArticle.appendChild(secondaryLink);
 
@@ -121,7 +121,7 @@ const displayData = (data) => {
 
     // Tambahkan elemen <a> di sekitar gambar dan judul populer
     const popularLink = document.createElement("a");
-    popularLink.href = `../../detail.html?id=${data[i].id}`;
+    popularLink.href = `./detail.html?id=${data[i].id}`;
     popularLink.classList.add("article-link");
     popularArticle.appendChild(popularLink);
 
@@ -160,7 +160,7 @@ const displayData = (data) => {
     const articleLink = document.createElement("a");
 
     // Set the href attribute to the desired URL
-    articleLink.href = `../../detail.html?id=${data[0].id}`;
+    articleLink.href = `./detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");
     articleImage.src = data[i].img_url;
@@ -194,6 +194,62 @@ const displayData = (data) => {
     newsSection.appendChild(beritaTerbaru);
 
     if (i === 12) {
+      break;
+    }
+  }
+
+  const beritaUtamaArticlesContainer = document.querySelector(".berita-utama");
+
+  for (let i = 13; i < Math.min(data.length, 17); i++) {
+    const beritaUtamaArticle = document.createElement("article");
+    beritaUtamaArticle.classList.add("berita-utama-article");
+
+    const utamaLink = document.createElement("a");
+    utamaLink.href = `./detail.html?id=${data[i].id}`;
+    utamaLink.classList.add("article-link");
+    beritaUtamaArticle.appendChild(utamaLink);
+
+    const utamaImage = document.createElement("img");
+    utamaImage.classList.add("img-utama");
+    utamaImage.src = data[i].img_url;
+    utamaLink.appendChild(utamaImage);
+
+    const utamaTitle = document.createElement("h1");
+    utamaTitle.textContent = data[i].title;
+    utamaLink.appendChild(utamaTitle);
+
+    beritaUtamaArticlesContainer.appendChild(beritaUtamaArticle);
+
+    if (i === 16) {
+      break;
+    }
+  }
+
+  const rekomendasiBeritaArticlesContainer = document.querySelector(
+    ".rekomendasi-berita"
+  );
+
+  for (let i = 17; i < Math.min(data.length, 21); i++) {
+    const rekomendasiBeritaArticle = document.createElement("article");
+    rekomendasiBeritaArticle.classList.add("berita-utama-article");
+
+    const rekomendasiLink = document.createElement("a");
+    rekomendasiLink.href = `./detail.html?id=${data[i].id}`;
+    rekomendasiLink.classList.add("article-link");
+    rekomendasiBeritaArticle.appendChild(rekomendasiLink);
+
+    const rekomendasiImage = document.createElement("img");
+    rekomendasiImage.classList.add("img-utama");
+    rekomendasiImage.src = data[i].img_url;
+    rekomendasiLink.appendChild(rekomendasiImage);
+
+    const rekomendasiTitle = document.createElement("h1");
+    rekomendasiTitle.textContent = data[i].title;
+    rekomendasiLink.appendChild(rekomendasiTitle);
+
+    rekomendasiBeritaArticlesContainer.appendChild(rekomendasiBeritaArticle);
+
+    if (i === 21) {
       break;
     }
   }
