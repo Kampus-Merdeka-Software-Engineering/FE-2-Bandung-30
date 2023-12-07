@@ -61,7 +61,6 @@ footer .credit a {
   }
 }
 
-/* Mobile Phone */
 @media (max-width: 450px) {
   footer {
     padding: 16px 0 24px;

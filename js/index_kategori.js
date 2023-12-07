@@ -48,7 +48,6 @@ const displayData = (data) => {
   combinedInfoParagraph.style.fontSize = "14px";
   combinedInfoParagraph.style.fontWeight = "700";
 
-  // Add publication date
   const publishDate = new Date(data[0].publish_at);
   const currentDate = new Date();
   const timeDifference = currentDate - publishDate;
@@ -64,7 +63,6 @@ const displayData = (data) => {
 
   container.appendChild(mainArticle);
 
-  // Display secondary articles
   const secondaryArticlesContainer = document.querySelector(
     ".secondary-articles"
   );
@@ -73,7 +71,6 @@ const displayData = (data) => {
     const secondaryArticle = document.createElement("article");
     secondaryArticle.classList.add("secondary-article");
 
-    // Tambahkan elemen <a> di sekitar gambar dan judul sekunder
     const secondaryLink = document.createElement("a");
     secondaryLink.href = `./detail.html?id=${data[i].id}`;
     secondaryLink.classList.add("article-link");
@@ -93,7 +90,6 @@ const displayData = (data) => {
 
     combinedInfoParagraph.textContent = `${data[0].category}`;
 
-    // Add publication date
     const publishDate = new Date(data[0].publish_at);
     const currentDate = new Date();
     const timeDifference = currentDate - publishDate;
@@ -119,7 +115,6 @@ const displayData = (data) => {
     const popularArticle = document.createElement("article");
     popularArticle.classList.add("article-list-item");
 
-    // Tambahkan elemen <a> di sekitar gambar dan judul populer
     const popularLink = document.createElement("a");
     popularLink.href = `./detail.html?id=${data[i].id}`;
     popularLink.classList.add("article-link");
@@ -148,7 +143,6 @@ const displayData = (data) => {
 
   const newsSection = document.querySelector(".berita");
 
-  // Display berita terbaru
   for (let i = 8; i < Math.min(data.length, 13); i++) {
     const beritaTerbaru = document.createElement("article");
     beritaTerbaru.classList.add("berita-terbaru");
@@ -156,10 +150,7 @@ const displayData = (data) => {
     const newsSectionArticle = document.createElement("article");
     newsSectionArticle.classList.add("berita-article");
 
-    // Create an anchor element
     const articleLink = document.createElement("a");
-
-    // Set the href attribute to the desired URL
     articleLink.href = `./detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");
@@ -326,14 +317,11 @@ const displayHome = async () => {
     }
   }
 
-  // Shuffle the combined data array
   combinedData = shuffleArray(combinedData);
 
-  // Display combined data
   displayData(combinedData);
 };
 
-// Function to shuffle an array (Fisher-Yates algorithm)
 const shuffleArray = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

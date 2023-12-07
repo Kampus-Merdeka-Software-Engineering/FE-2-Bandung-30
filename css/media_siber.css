@@ -126,12 +126,6 @@ ol.d {
   .content .ttd {
     margin-bottom: 36px;
   }
-
-  /* Footer */
-  footer {
-    padding: 16px 0 24px;
-    /* Adjust padding for better responsiveness */
-  }
 }
 
 @media (max-width: 1280px) {
@@ -202,7 +196,6 @@ ol.d {
   }
 }
 
-/* Mobile Phone */
 @media (max-width: 450px) {
   .content h1 {
     font-size: 30px;

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .trending-articles-container {
@@ -144,7 +144,6 @@
   object-fit: cover;
 }
 
-/*--------------------- section - article list -------------------------*/
 .box-header {
   margin-bottom: 14px;
 }
@@ -232,8 +231,6 @@
   color: gray;
 }
 
-/*--------------------- section header -------------------------*/
-
 .section-header {
   width: 70%;
   margin: 0 auto;
@@ -252,8 +249,6 @@
   border-radius: 10px;
   border-bottom-right-radius: 0;
 }
-
-/*--------------------- section -------------------------*/
 
 .berita-terbaru {
   display: flex;
@@ -350,7 +345,6 @@
   }
 }
 
-/* For extra-large screens (1440px) */
 @media (min-width: 1281px) and (max-width: 1440px) {
   .trending-articles-container,
   .main-article {

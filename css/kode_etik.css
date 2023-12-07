@@ -136,7 +136,6 @@ ol.a {
   }
 }
 
-/* Mobile Phone */
 @media (max-width: 450px) {
   .content .container h1 {
     font-size: 30px;

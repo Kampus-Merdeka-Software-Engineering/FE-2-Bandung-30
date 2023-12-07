@@ -19,7 +19,6 @@ const fetchData = async (subcategory) => {
 };
 
 const displayData = (data) => {
-  // Display main article
   const mainArticle = document.createElement("div");
   mainArticle.classList.add("main-article");
 
@@ -66,8 +65,6 @@ const displayData = (data) => {
   mainArticle.appendChild(mainLink);
   container.appendChild(mainArticle);
 
-  //display news section
-
   const newsSection = document.querySelector(".berita");
 
   for (let i = 1; i < data.length; i++) {
@@ -77,10 +74,8 @@ const displayData = (data) => {
     const newsSectionArticle = document.createElement("article");
     newsSectionArticle.classList.add("berita-article");
 
-    // Create an anchor element
     const articleLink = document.createElement("a");
 
-    // Set the href attribute to the desired URL
     articleLink.href = `../../detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");

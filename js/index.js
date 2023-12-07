@@ -1,6 +1,4 @@
-// Toggle class active untuk hamburger menu
 const navbarNav = document.querySelector(".navbar-nav");
-// ketika hamburger menu di klik
 document.querySelector("#menu").onclick = () => {
   navbarNav.classList.toggle("active");
 };
@@ -14,7 +12,6 @@ document
     });
   });
 
-// Menutup dropdown yang lain ketika suatu dropdown dibuka
 function toggleDropdown(dropdownMenu) {
   document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
     if (menu !== dropdownMenu) {
@@ -22,14 +19,12 @@ function toggleDropdown(dropdownMenu) {
     }
   });
 
-  // Toggle dropdown yang dipilih
   dropdownMenu.style.display =
     dropdownMenu.style.display === "none" || dropdownMenu.style.display === ""
       ? "block"
       : "none";
 }
 
-// Toggle class active untuk search form
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
 
@@ -39,7 +34,6 @@ document.querySelector("#search-button").onclick = (e) => {
   e.preventDefault();
 };
 
-// Klik di luar elemen
 const sb = document.querySelector("#search-button");
 
 document.addEventListener("click", function (e) {
@@ -53,7 +47,6 @@ function submitContactUs(event) {
   const form = event.target;
   const formData = new FormData(form);
 
-  // Kirim data form ke server menggunakan Fetch API
   fetch("https://api-revou.mrizkiw.com/submit-contactus", {
     method: "POST",
     headers: {
@@ -63,19 +56,14 @@ function submitContactUs(event) {
   })
     .then((response) => response.text())
     .then((data) => {
-      // Tampilkan SweetAlert dengan ikon sukses
       Swal.fire({
         icon: "success",
         title: "Terima Kasih!",
         text: "Pesan Anda telah berhasil dikirim.",
       });
-
-      // Atau, jika Anda ingin mengarahkan pengguna ke halaman lain setelah sukses:
-      // window.location.href = '/halaman-sukses.html';
     })
     .catch((error) => {
       console.error("Error:", error);
-      // Tampilkan SweetAlert dengan ikon error jika terjadi kesalahan
       Swal.fire({
         icon: "error",
         title: "Oops...",
