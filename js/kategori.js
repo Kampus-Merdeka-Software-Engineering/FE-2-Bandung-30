@@ -1,8 +1,8 @@
+const API_URL = "https://api-revou.mrizkiw.com/data/articles/category/";
+
 const fetchData = async (category) => {
   try {
-    let response = await fetch(
-      `https://api-revou.mrizkiw.com//data/articles/category/${category}?pageSize=100`
-    );
+    let response = await fetch(`${API_URL}${category}?pageSize=100`);
 
     let data = await response.json();
 
@@ -193,6 +193,7 @@ const displayData = (data) => {
 
 const displayOtomotif = async () => {
   const otomotifData = await fetchData("otomotif");
+
   if (otomotifData) {
     displayData(otomotifData);
   }
@@ -238,39 +239,4 @@ const displayEkonomi = async () => {
   if (ekonomiData) {
     displayData(ekonomiData);
   }
-};
-
-const displayHome = async () => {
-  const categories = [
-    "otomotif",
-    "olahraga",
-    "gaya hidup",
-    "hiburan",
-    "teknologi",
-    "politik",
-    "ekonomi",
-  ];
-  let combinedData = [];
-
-  for (const category of categories) {
-    const categoryData = await fetchData(category);
-
-    if (categoryData) {
-      combinedData = combinedData.concat(categoryData);
-    } else {
-      console.error(`No data available for category: ${category}`);
-    }
-  }
-
-  combinedData = shuffleArray(combinedData);
-
-  displayData(combinedData);
-};
-
-const shuffleArray = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
 };

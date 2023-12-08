@@ -299,13 +299,6 @@
   color: #ad2139;
 }
 
-.berita-article,
-.lotus-section-article,
--article {
-  width: 100%;
-  display: flex;
-}
-
 @media (min-width: 1441px) and (max-width: 1915px) {
   .top-headlines {
     width: 80%;

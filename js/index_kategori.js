@@ -1,8 +1,8 @@
+const API_URL = "https://api-revou.mrizkiw.com/data/articles/category/";
+
 const fetchData = async (category) => {
   try {
-    let response = await fetch(
-      `https://api-revou.mrizkiw.com//data/articles/category/${category}?pageSize=100`
-    );
+    let response = await fetch(`${API_URL}${category}?pageSize=100`);
 
     let data = await response.json();
 

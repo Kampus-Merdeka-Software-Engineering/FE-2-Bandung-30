@@ -1,47 +1,103 @@
 .container {
-    zoom: 80%;
-    font-family: "Open Sans", sans-serif;
-    color: hsl(0, 4%, 9%);
-    min-height: 125vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  main {
-    text-align: left;
-    display: flex;
-    margin-top: 20px;
-    width: 35%;
-    border: 1px solid black;
-  }
-  
-  main div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main img {
-    width: 790px;
-    height: 400px;
-    margin: 20px;
-  }
-  
-  main h1 {
-    margin: 16px;
-  }
-  
-  main p {
-    margin: 8px 20px;
-  }
-  
-  main a {
-    color: #181818;
-    margin-bottom: 20px;
-  }
-  
-  main a:hover {
-    color: #ad2139;
-  }
+  font-family: "Open Sans", sans-serif;
+  color: hsl(0, 4%, 9%);
+  min-height: 125vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+main div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 800px;
+  height: 500px;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+main h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin: 20px 0;
+  width: 90%;
+}
+
+.berita {
+  width: 70%;
+}
+
+.category-link {
+  width: 12%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #181818;
+  margin-bottom: 20px;
+}
+
+.referensi {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+}
+
+.link-article {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb;
+  color: #181818;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  width: 250px;
+  transition: all 0.8s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.read-more-link {
+  width: 100%;
+  margin: 0;
+}
+
+.read-more-link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.read-more-link span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.8s;
+}
+
+.read-more-link:hover span {
+  padding-right: 25px;
+}
+
+.read-more-link:hover span:after {
+  opacity: 1;
+  right: 0;
+}
