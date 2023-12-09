@@ -42,11 +42,8 @@ const displayData = (data) => {
   mainArticle.appendChild(mainDesc);
 
   const combinedInfoParagraph = document.createElement("p");
-
+  combinedInfoParagraph.classList.add("category");
   combinedInfoParagraph.textContent = `${data[0].category} `;
-  combinedInfoParagraph.style.color = "#ad2139";
-  combinedInfoParagraph.style.fontSize = "14px";
-  combinedInfoParagraph.style.fontWeight = "700";
 
   const publishDate = new Date(data[0].publish_at);
   const currentDate = new Date();
@@ -88,9 +85,9 @@ const displayData = (data) => {
 
     const combinedInfoParagraph = document.createElement("p");
 
-    combinedInfoParagraph.textContent = `${data[0].category}`;
+    combinedInfoParagraph.textContent = `${data[i].category}`;
 
-    const publishDate = new Date(data[0].publish_at);
+    const publishDate = new Date(data[i].publish_at);
     const currentDate = new Date();
     const timeDifference = currentDate - publishDate;
     const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
@@ -152,7 +149,7 @@ const displayData = (data) => {
 
     const articleLink = document.createElement("a");
 
-    articleLink.href = `../../detail.html?id=${data[0].id}`;
+    articleLink.href = `../../detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");
     articleImage.src = data[i].img_url;

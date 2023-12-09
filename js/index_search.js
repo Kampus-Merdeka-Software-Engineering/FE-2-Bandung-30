@@ -23,7 +23,7 @@ searchBox.addEventListener("keydown", function (e) {
     if (keyword !== "") {
       window.location.href = `search_results.html?keyword=${encodeURIComponent(
         keyword
-      )}`;
+      ).replace(/%20/g, "+")}`;
     }
   }
 });

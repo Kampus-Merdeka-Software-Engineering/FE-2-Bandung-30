@@ -156,14 +156,19 @@ textarea {
   }
 
   .row {
+    display: block;
     width: 85%;
     padding: 20px;
   }
 
-  .content-left,
+  .content-left {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
   .content-right {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
 
   .content-left p {
@@ -214,10 +219,14 @@ textarea {
     padding: 20px;
   }
 
-  .content-left,
+  .content-left {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
   .content-right {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
 
   .content-left p {
@@ -241,17 +250,17 @@ textarea {
   }
 
   .container h1 {
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 100px;
   }
 
   .container h2 {
-    font-size: 12px;
+    font-size: 20px;
     margin-bottom: 12px;
   }
 
   .container h4 {
-    font-size: 10px;
+    font-size: 14px;
     padding-bottom: 24px;
   }
 
@@ -271,14 +280,18 @@ textarea {
     height: 40%;
   }
 
-  .content-left,
+  .content-left {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
   .content-right {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
 
   .content-left p {
-    font-size: 60%;
+    font-size: 80%;
   }
 
   input[type="text"],

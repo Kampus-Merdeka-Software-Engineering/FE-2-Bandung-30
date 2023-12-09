@@ -1,4 +1,6 @@
 const API_URL = "https://api-revou.mrizkiw.com/data/articles";
+const WEB_URL =
+  "https://kampus-merdeka-software-engineering.github.io/FE-2-Bandung-30";
 
 let url = window.location.search;
 let params = new URLSearchParams(url);
@@ -19,8 +21,10 @@ const formatDate = (publishDate) => {
 
 const template = (item) => {
   const formattedDate = formatDate(item.publish_at);
+  const lowerCaseCategory = item.category.toLowerCase();
+
   return `<div>
-        <a class="category-link" href="${item.category}">${item.category}</a>
+        <a class="category-link" href="${WEB_URL}/berita/${lowerCaseCategory}/${lowerCaseCategory}.html">${item.category}</a>
         <h1>${item.title}</h1>
         <time>Diterbitkan ${formattedDate}</time>
         <a class="referensi" href="https://www.cnnindonesia.com/">Oleh CNN INDONESIA</a>

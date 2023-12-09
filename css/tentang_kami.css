@@ -114,8 +114,7 @@
 
 @media (max-width: 1280px) {
   .team {
-    display: grid;
-    column-gap: 16px;
+    display: block;
   }
 
   .content h1 {
@@ -144,9 +143,7 @@
 
 @media (max-width: 758px) {
   .team {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 16px;
+    display: block;
   }
 
   .content h1 {
@@ -184,9 +181,11 @@
   }
 
   .team {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 16px;
+    display: block;
+  }
+
+  .team-member {
+    margin: 20px 0;
   }
 
   .team-member img {

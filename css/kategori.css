@@ -84,33 +84,10 @@
   color: #191717;
 }
 
-.main-article-info {
-  margin: 1em 0;
-  color: black;
-}
-
-.main-article-info .article-header {
-  font-size: 2em;
+.main-article .category {
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
-}
-
-.main-article-info .article-header:hover {
-  color: gray;
-  text-decoration: underline;
-}
-
-.main-article-info p {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 1em 0;
-  line-height: 1.5;
-}
-
-.main-article-info .article-time {
-  font-size: 1em;
-  font-weight: 100;
-  font-size: 0.8em;
+  color: #ad2139;
 }
 
 .secondary-articles {
