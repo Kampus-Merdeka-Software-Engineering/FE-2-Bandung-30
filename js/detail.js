@@ -20,22 +20,27 @@ const formatDate = (publishDate) => {
 const template = (item) => {
   const formattedDate = formatDate(item.publish_at);
   return `<div>
-        <a "href="#" class="category-link">${item.category}</a>
+        <a class="category-link" href="${item.category}">${item.category}</a>
         <h1>${item.title}</h1>
         <time>Diterbitkan ${formattedDate}</time>
-        <p class="referensi">Oleh CNN INDONESIA</p>
+        <a class="referensi" href="https://www.cnnindonesia.com/">Oleh CNN INDONESIA</a>
         <img src="${item.img_url}">
         <p>${item.desc}</p>
         <a class="link-article" href="${item.source}"><p class="read-more-link"><span>Baca Selengkapnya</span></p></a>
     </div>`;
 };
 
-fetch(`${API_URL}/id/${params.get("id")}`)
-  .then((response) => response.json())
-  .then((data) => {
-    let content = template(data);
-    container.innerHTML = content;
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
+const idParam = params.get("id");
+if (idParam) {
+  fetch(`${API_URL}/id/${idParam}`)
+    .then((response) => response.json())
+    .then((data) => {
+      let content = template(data);
+      container.innerHTML = content;
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+} else {
+  console.error("No 'id' parameter found in the URL");
+}

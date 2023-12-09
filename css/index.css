@@ -26,7 +26,7 @@
 }
 
 .main-article a {
-  color: #181818;
+  color: #191717;
 }
 
 .main-article a:hover {
@@ -50,6 +50,7 @@
 
 .main-article p {
   margin-bottom: 8px;
+  color: #191717;
 }
 
 .main-article-info {
@@ -104,7 +105,7 @@
 }
 
 .secondary-article a {
-  color: #181818;
+  color: #191717;
 }
 
 .secondary-article a:hover {
@@ -188,7 +189,7 @@
 }
 
 .article-list-item a {
-  color: #181818;
+  color: #191717;
 }
 
 .article-list-item a:hover {
@@ -263,7 +264,7 @@
 .berita-article a {
   display: flex;
   margin-bottom: 50px;
-  color: #181818;
+  color: #191717;
 }
 
 .berita-article a:hover {
@@ -279,7 +280,7 @@
 }
 
 .berita-utama a {
-  color: #181818;
+  color: #191717;
 }
 
 .berita-utama a:hover {
@@ -301,7 +302,7 @@
 }
 
 .rekomendasi-berita a {
-  color: #181818;
+  color: #191717;
 }
 
 .rekomendasi-berita a:hover {

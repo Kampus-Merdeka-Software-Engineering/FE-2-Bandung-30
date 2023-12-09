@@ -4,12 +4,33 @@ let url = window.location.search;
 let params = new URLSearchParams(url);
 const container = document.getElementById("container");
 
+const formatDate = (publishDate) => {
+  const dateObj = new Date(publishDate);
+  const currentDate = new Date();
+
+  const timeDifference = Math.floor(
+    (currentDate - dateObj) / (1000 * 60 * 60 * 24)
+  );
+  if (timeDifference === 0) {
+    return "Hari ini";
+  } else if (timeDifference === 1) {
+    return "Kemarin";
+  } else {
+    return `${timeDifference} hari yang lalu`;
+  }
+};
+
 const template = (item) => {
+  const formattedDate = formatDate(item.publish_at);
   return `<div>
+          <div class="box-article">
         <img src="${item.img_url}" alt="Image">
-        <h1>${item.title}</h1>
-        <p>${item.desc}</p>
-        <a href="${item.source}"><p>Baca Selengkapnya >>></p></a>
+        <h1>${item.title}
+        <p class="paragraf">${item.desc}</p>
+        <p class="category">${item.category}<time> • ${formattedDate}</time></p>
+        <a class="link-article" href="${item.source}"><p class="read-more-link"><span>Baca Selengkapnya</span></p></a>
+        </h1>
+        </div>
     </div>`;
 };
 
