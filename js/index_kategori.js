@@ -87,7 +87,7 @@ const displayData = (data) => {
 
     combinedInfoParagraph.textContent = `${data[i].category}`;
 
-    const publishDate = new Date(data[0].publish_at);
+    const publishDate = new Date(data[i].publish_at);
     const currentDate = new Date();
     const timeDifference = currentDate - publishDate;
     const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
