@@ -23,6 +23,11 @@
   color: #ad2139;
 }
 
+.top-headlines .headlines-title .sub-kategori {
+  margin: 0 20px 0 0;
+  color: #ad2139;
+}
+
 .top-headlines .row {
   margin: 0 20px 0 0;
 }
@@ -81,6 +86,11 @@
   height: 400px;
   padding: 20px;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.main-article:hover .image-main-article {
+  transform: scale(1.02);
 }
 
 .main-article a {
@@ -184,12 +194,18 @@
 
 .berita-terbaru {
   display: flex;
+  transition: 0.5s ease;
+}
+
+.berita-terbaru:hover .berita-article img {
+  transform: scale(1.02);
 }
 
 .berita-article img {
   width: 400px;
   height: 250px;
   object-fit: cover;
+  transition: 0.5s ease;
 }
 
 .berita-article a {

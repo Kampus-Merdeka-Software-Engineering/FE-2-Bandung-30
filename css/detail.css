@@ -205,10 +205,16 @@ time {
 
   .category-link {
     width: 40%;
+    font-size: 16px;
   }
 
   main h1 {
     width: 100%;
+    font-size: 22px;
+  }
+
+  .referensi {
+    font-size: 14px;
   }
 
   main p {

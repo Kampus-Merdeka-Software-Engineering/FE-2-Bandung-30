@@ -37,6 +37,11 @@
   width: 670px;
   height: 500px;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.main-article:hover .image-main-article {
+  transform: scale(1.02);
 }
 
 .news-title {
@@ -74,6 +79,11 @@
 .image-secondary-article {
   width: 240px;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.secondary-article:hover .image-secondary-article {
+  transform: scale(1.03);
 }
 
 .secondary-title {
@@ -194,6 +204,11 @@
 .article-list-item img {
   width: 100px;
   height: 60px;
+  transition: 0.5s ease;
+}
+
+.article-list-item:hover img {
+  transform: scale(1.05);
 }
 
 .terbaru-title {
@@ -236,12 +251,18 @@
 
 .berita-terbaru {
   display: flex;
+  transition: 0.5s ease;
+}
+
+.berita-terbaru:hover .berita-article img {
+  transform: scale(1.02);
 }
 
 .berita-article img {
   width: 400px;
   height: 250px;
   object-fit: cover;
+  transition: 0.5s ease;
 }
 
 .berita-article a {
@@ -274,6 +295,12 @@
   width: 265px;
   height: 200px;
   margin: 12px 0;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.berita-utama-article:hover .img-utama {
+  transform: scale(1.02);
 }
 
 .rekomendasi-berita {
@@ -305,6 +332,12 @@
   .image-main-article {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+  }
+
+  .main-article:hover .image-main-article {
+    transform: scale(1.02);
   }
 
   .image-secondary-article {
@@ -532,7 +565,13 @@
   .image-main-article {
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    transition: 0.5s ease;
   }
+
+.main-article:hover .image-main-article {
+  transform: scale(1.02);
+}
 
   .image-secondary-article {
     width: 100px;
@@ -612,6 +651,7 @@
 
   .berita-article img {
     width: 45%;
+    object-fit: cover;
   }
 
   .rekomendasi-berita {

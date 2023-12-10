@@ -120,6 +120,10 @@ time {
     width: 85%;
   }
 
+  .berita h2 {
+    font-size: 24px;
+  }
+
   main h1 {
     font-size: 20px;
   }
@@ -141,6 +145,10 @@ time {
   main h1 {
     font-size: 16px;
     margin: 1.5em;
+  }
+
+  .berita h2 {
+    font-size: 18px;
   }
 
   .paragraf {
@@ -169,6 +177,10 @@ time {
 
   .berita {
     width: 85%;
+  }
+
+  .berita h2 {
+    font-size: 16px;
   }
 
   main h1 {
