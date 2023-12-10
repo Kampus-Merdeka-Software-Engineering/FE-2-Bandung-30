@@ -233,7 +233,7 @@
 .section-header {
   width: 70%;
   margin: 0 auto;
-  color: white;
+  color: #f1f6f9;
   font-size: 1.2em;
   font-weight: 700;
 
@@ -366,6 +366,10 @@
   .trending-articles-container,
   .main-article {
     width: 80%;
+  }
+
+  .section-header h2 {
+    width: 35%;
   }
 
   .main-article {
@@ -569,9 +573,9 @@
     transition: 0.5s ease;
   }
 
-.main-article:hover .image-main-article {
-  transform: scale(1.02);
-}
+  .main-article:hover .image-main-article {
+    transform: scale(1.02);
+  }
 
   .image-secondary-article {
     width: 100px;
