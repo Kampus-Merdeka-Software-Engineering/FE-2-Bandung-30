@@ -88,6 +88,12 @@
   color: #181818;
 }
 
+.main-article .category {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ad2139;
+}
+
 .main-article a:hover {
   color: #ad2139;
 }
@@ -130,6 +136,8 @@
 
 .publish-date {
   color: gray;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .article-list-item img {
@@ -253,5 +261,271 @@
   .article-list-item img {
     width: 90px;
     height: 54px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+
+  .top-headlines {
+    width: 80%;
+  }
+
+  .trending-articles-container {
+    width: 80%;
+  }
+
+  .trending-articles {
+    display: block;
+    width: 100%;
+  }
+
+  .main-article a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-main-article {
+    width: 100%;
+    height: 600px;
+    object-fit: inherit;
+  }
+
+  .news-title {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .section-header {
+    width: 80%;
+  }
+
+  .section-header h2 {
+    font-size: 18px;
+    width: 35%;
+    padding: 8px 8px;
+  }
+
+  .berita-utama {
+    width: 80%;
+  }
+
+  .img-utama {
+    width: 100%;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .berita {
+    width: 80%;
+  }
+
+  .berita-article img {
+    width: 250px;
+    height: 200px;
+    object-fit: inherit;
+  }
+
+  .terbaru-title {
+    font-size: 16px;
+  }
+
+  .rekomendasi-berita {
+    width: 80%;
+  }
+}
+
+@media (max-width: 758px) {
+  .container {
+    width: 100%;
+  }
+
+  .top-headlines {
+    width: 80%;
+  }
+
+  .headlines-type {
+    margin: 0 10px 0 0;
+  }
+
+  .top-headlines h3 {
+    font-size: 14px;
+  }
+
+  .top-headlines .row {
+    margin: 0 10px 0 0;
+  }
+
+  .top-headlines .headlines-title a {
+    margin: 0 10px 0 0;
+    color: #191717;
+    font-size: 14px;
+  }
+
+  .trending-articles-container {
+    width: 80%;
+  }
+
+  .main-article a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trending-articles {
+    display: block;
+    width: 100%;
+  }
+
+  .image-main-article {
+    width: 100%;
+    height: 300px;
+  }
+
+  .image-secondary-article {
+    width: 100px;
+    height: 100px;
+    object-fit: inherit;
+  }
+
+  .news-title {
+    font-size: 18px;
+    width: 90%;
+    margin: 1em;
+  }
+
+  .main-article p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .main-article .category {
+    font-size: 12px;
+  }
+
+  .publish-date {
+    font-size: 12px;
+  }
+
+  .section-header {
+    width: 80%;
+  }
+
+  .section-header h2 {
+    font-size: 16px;
+    width: 50%;
+  }
+
+  .berita {
+    width: 80%;
+  }
+
+  .berita-article img {
+    width: 45%;
+  }
+
+  .terbaru-title {
+    font-size: 14px;
+    margin: 2em;
+    width: 100%;
+  }
+
+  .terbaru-title p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+  }
+
+  .top-headlines {
+    width: 80%;
+  }
+
+  .headlines-type {
+    margin: 0 10px 0 0;
+  }
+
+  .top-headlines h3 {
+    font-size: 11px;
+  }
+
+  .top-headlines .row {
+    margin: 0 10px 0 0;
+  }
+
+  .top-headlines .headlines-title a {
+    margin: 0 10px 0 0;
+    color: #191717;
+    font-size: 11px;
+  }
+
+  .trending-articles-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trending-articles {
+    display: block;
+    width: 100%;
+  }
+
+  .main-article a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article p {
+    font-size: 12px;
+  }
+
+  .main-article .category {
+    font-size: 10px;
+  }
+
+  .publish-date {
+    font-size: 10px;
+  }
+
+  .image-main-article {
+    width: 100%;
+    height: 300px;
+  }
+
+  .news-title {
+    font-size: 16px;
+    width: 90%;
+    margin: 1em;
+  }
+
+  .section-header {
+    width: 80%;
+  }
+
+  .section-header h2 {
+    font-size: 14px;
+    width: 55%;
+  }
+
+  .terbaru-title {
+    font-size: 14px;
+    width: 100%;
+    margin: 2em 0 2em 2em;
+  }
+
+  .berita {
+    width: 80%;
+  }
+
+  .berita-article img {
+    width: 45%;
+    height: 180px;
   }
 }

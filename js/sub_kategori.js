@@ -45,9 +45,7 @@ const displayData = (data) => {
 
   const categorySpan = document.createElement("span");
   categorySpan.textContent = `${data[0].category} `;
-  categorySpan.style.color = "#ad2139";
-  categorySpan.style.fontSize = "14px";
-  categorySpan.style.fontWeight = "700";
+  categorySpan.classList.add("category");
   categoryAndDateParagraph.appendChild(categorySpan);
 
   const publishDate = new Date(data[0].publish_at);
