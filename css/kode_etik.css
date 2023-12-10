@@ -7,7 +7,7 @@
   justify-content: center;
   width: 100%;
   min-height: 373vh;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .container {
@@ -64,6 +64,9 @@ ol.a {
 }
 
 @media (max-width: 1280px) {
+  .content {
+    padding-top: 40px;
+  }
   .content h1 {
     margin-top: 120px;
   }

@@ -157,7 +157,7 @@ textarea {
 
   .row {
     display: block;
-    width: 85%;
+    width: 500px;
     padding: 20px;
   }
 
@@ -215,7 +215,7 @@ textarea {
   }
 
   .row {
-    width: 85%;
+    width: 400px;
     padding: 20px;
   }
 
@@ -251,7 +251,6 @@ textarea {
 
   .container h1 {
     font-size: 24px;
-    margin-top: 100px;
   }
 
   .container h2 {

@@ -240,55 +240,6 @@ const displayData = (data) => {
   }
 };
 
-const displayOtomotif = async () => {
-  const otomotifData = await fetchData("otomotif");
-  if (otomotifData) {
-    displayData(otomotifData);
-  }
-};
-
-const displayGayaHidup = async () => {
-  const gayaHidupData = await fetchData("Gaya Hidup");
-  if (gayaHidupData) {
-    displayData(gayaHidupData);
-  }
-};
-
-const displayOlahraga = async () => {
-  const olahragaData = await fetchData("olahraga");
-  if (olahragaData) {
-    displayData(olahragaData);
-  }
-};
-
-const displayHiburan = async () => {
-  const hiburanData = await fetchData("hiburan");
-  if (hiburanData) {
-    displayData(hiburanData);
-  }
-};
-
-const displayTeknologi = async () => {
-  const teknologiData = await fetchData("teknologi");
-  if (teknologiData) {
-    displayData(teknologiData);
-  }
-};
-
-const displayPolitik = async () => {
-  const politikData = await fetchData("politik");
-  if (politikData) {
-    displayData(politikData);
-  }
-};
-
-const displayEkonomi = async () => {
-  const ekonomiData = await fetchData("ekonomi");
-  if (ekonomiData) {
-    displayData(ekonomiData);
-  }
-};
-
 const displayHome = async () => {
   const categories = [
     "otomotif",

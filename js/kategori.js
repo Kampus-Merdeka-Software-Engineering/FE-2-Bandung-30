@@ -1,8 +1,12 @@
 const API_URL = "https://api-revou.mrizkiw.com/data/articles/category/";
+const SORT_ORDER = "desc";
+const SORT_BY = "publish_at";
 
 const fetchData = async (category) => {
   try {
-    let response = await fetch(`${API_URL}${category}?pageSize=100`);
+    let response = await fetch(
+      `${API_URL}${category}?pageSize=100&sortOrder=${SORT_ORDER}&sortBy=${SORT_BY}`
+    );
 
     let data = await response.json();
 
@@ -64,7 +68,7 @@ const displayData = (data) => {
     ".secondary-articles"
   );
 
-  for (let i = 1; i < data.length; i++) {
+  for (let i = 11; i < Math.min(data.length, 13); i++) {
     const secondaryArticle = document.createElement("article");
     secondaryArticle.classList.add("secondary-article");
 
@@ -101,14 +105,14 @@ const displayData = (data) => {
     secondaryArticle.appendChild(combinedInfoParagraph);
 
     secondaryArticlesContainer.appendChild(secondaryArticle);
-    if (i === 2) {
+    if (i === 12) {
       break;
     }
   }
 
   const popularArticlesContainer = document.querySelector(".article-list");
 
-  for (let i = 3; i < Math.min(data.length, 8); i++) {
+  for (let i = 6; i < Math.min(data.length, 11); i++) {
     const popularArticle = document.createElement("article");
     popularArticle.classList.add("article-list-item");
 
@@ -133,14 +137,14 @@ const displayData = (data) => {
     categoryParagraph.style.fontWeight = "700";
 
     popularArticlesContainer.appendChild(popularArticle);
-    if (i === 7) {
+    if (i === 10) {
       break;
     }
   }
 
   const newsSection = document.querySelector(".berita");
 
-  for (let i = 8; i < Math.min(data.length, 13); i++) {
+  for (let i = 1; i < Math.min(data.length, 6); i++) {
     const beritaTerbaru = document.createElement("article");
     beritaTerbaru.classList.add("berita-terbaru");
 
@@ -182,7 +186,7 @@ const displayData = (data) => {
     beritaTerbaru.appendChild(newsSectionArticle);
     newsSection.appendChild(beritaTerbaru);
 
-    if (i === 12) {
+    if (i === 5) {
       break;
     }
   }

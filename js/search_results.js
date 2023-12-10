@@ -115,7 +115,7 @@ if (keyword) {
           container.innerHTML += content;
         });
       } else {
-        container.innerHTML = "<p>Maaf Hasil tidak ditemukan</p>";
+        container.innerHTML = "<h2>Maaf, hasil tidak ditemukan</h2>";
       }
     })
     .catch((error) => {
