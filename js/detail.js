@@ -24,7 +24,7 @@ const template = (item) => {
   const lowerCaseCategory = item.category.toLowerCase();
 
   return `<div>
-        <a class="category-link" href="${WEB_URL}/berita/${lowerCaseCategory}/${lowerCaseCategory}.html">${item.category}</a>
+  <a class="category-link" href="${WEB_URL}/berita/${item.category.replace(/\s+/g, '_').toLowerCase()}/${item.category.replace(/\s+/g, '_').toLowerCase()}.html">${item.category}</a>
         <h1>${item.title}</h1>
         <time>Diterbitkan ${formattedDate}</time>
         <a class="referensi" href="https://www.cnnindonesia.com/">Oleh CNN INDONESIA</a>
