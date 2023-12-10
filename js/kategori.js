@@ -27,29 +27,29 @@ const displayData = (data) => {
   mainArticle.classList.add("main-article");
 
   const mainLink = document.createElement("a");
-  mainLink.href = `../../detail.html?id=${data[0].id}`;
+  mainLink.href = `../../detail.html?id=${data[5].id}`;
   mainLink.classList.add("article-link");
   mainArticle.appendChild(mainLink);
 
   const mainImage = document.createElement("img");
   mainImage.classList.add("image-main-article");
-  mainImage.src = data[0].img_url;
+  mainImage.src = data[5].img_url;
   mainLink.appendChild(mainImage);
 
   const mainTitle = document.createElement("h1");
   mainTitle.classList.add("news-title");
-  mainTitle.textContent = data[0].title;
+  mainTitle.textContent = data[5].title;
   mainLink.appendChild(mainTitle);
 
   const mainDesc = document.createElement("p");
-  mainDesc.textContent = data[0].desc;
+  mainDesc.textContent = data[5].desc;
   mainArticle.appendChild(mainDesc);
 
   const combinedInfoParagraph = document.createElement("p");
   combinedInfoParagraph.classList.add("category");
-  combinedInfoParagraph.textContent = `${data[0].category} `;
+  combinedInfoParagraph.textContent = `${data[5].category} `;
 
-  const publishDate = new Date(data[0].publish_at);
+  const publishDate = new Date(data[5].publish_at);
   const currentDate = new Date();
   const timeDifference = currentDate - publishDate;
   const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
@@ -144,7 +144,7 @@ const displayData = (data) => {
 
   const newsSection = document.querySelector(".berita");
 
-  for (let i = 1; i < Math.min(data.length, 6); i++) {
+  for (let i = 0; i < Math.min(data.length, 5); i++) {
     const beritaTerbaru = document.createElement("article");
     beritaTerbaru.classList.add("berita-terbaru");
 
@@ -168,12 +168,24 @@ const displayData = (data) => {
     const currentDate = new Date();
     const timeDifference = currentDate - publishDate;
     const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hoursAgo = Math.floor(timeDifference / (1000 * 60 * 60));
+    const minutesAgo = Math.floor(timeDifference / (1000 * 60));
+
+    let timeAgoText;
+
+    if (daysAgo > 0) {
+      timeAgoText = `${daysAgo} hari yang lalu`;
+    } else if (hoursAgo > 0) {
+      timeAgoText = `${hoursAgo} jam yang lalu`;
+    } else {
+      timeAgoText = `${minutesAgo} menit yang lalu`;
+    }
 
     const combinedInfoParagraph = document.createElement("p");
 
     const publishDateSpan = document.createElement("span");
     publishDateSpan.classList.add("publish-date");
-    publishDateSpan.textContent = `• ${daysAgo} hari yang lalu`;
+    publishDateSpan.textContent = `• ${timeAgoText}`;
 
     combinedInfoParagraph.innerHTML = `${data[i].category}  `;
     combinedInfoParagraph.appendChild(publishDateSpan);
@@ -186,7 +198,7 @@ const displayData = (data) => {
     beritaTerbaru.appendChild(newsSectionArticle);
     newsSection.appendChild(beritaTerbaru);
 
-    if (i === 5) {
+    if (i === 4) {
       break;
     }
   }
