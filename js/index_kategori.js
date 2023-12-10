@@ -1,9 +1,9 @@
 const API_URL = "https://api-revou.mrizkiw.com/data/articles/category/";
+const API_URL_NEWEST = "https://api-revou.mrizkiw.com/data/articles/newest";
 
-const fetchData = async (category) => {
+const fetchData = async (url) => {
   try {
-    let response = await fetch(`${API_URL}${category}?pageSize=100`);
-
+    let response = await fetch(url);
     let data = await response.json();
 
     if (Array.isArray(data)) {
@@ -137,52 +137,6 @@ const displayData = (data) => {
 
   const newsSection = document.querySelector(".berita");
 
-  for (let i = 8; i < Math.min(data.length, 13); i++) {
-    const beritaTerbaru = document.createElement("article");
-    beritaTerbaru.classList.add("berita-terbaru");
-
-    const newsSectionArticle = document.createElement("article");
-    newsSectionArticle.classList.add("berita-article");
-
-    const articleLink = document.createElement("a");
-    articleLink.href = `./detail.html?id=${data[i].id}`;
-
-    const articleImage = document.createElement("img");
-    articleImage.src = data[i].img_url;
-    articleLink.appendChild(articleImage);
-
-    const articleTitle = document.createElement("h1");
-    articleTitle.classList.add("terbaru-title");
-    articleTitle.textContent = data[i].title;
-
-    const publishDate = new Date(data[i].publish_at);
-
-    const currentDate = new Date();
-    const timeDifference = currentDate - publishDate;
-    const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-    const combinedInfoParagraph = document.createElement("p");
-
-    const publishDateSpan = document.createElement("span");
-    publishDateSpan.classList.add("publish-date");
-    publishDateSpan.textContent = `• ${daysAgo} hari yang lalu`;
-
-    combinedInfoParagraph.innerHTML = `${data[i].category}  `;
-    combinedInfoParagraph.appendChild(publishDateSpan);
-
-    articleTitle.appendChild(combinedInfoParagraph);
-    articleLink.appendChild(articleTitle);
-
-    newsSectionArticle.appendChild(articleLink);
-
-    beritaTerbaru.appendChild(newsSectionArticle);
-    newsSection.appendChild(beritaTerbaru);
-
-    if (i === 12) {
-      break;
-    }
-  }
-
   const beritaUtamaArticlesContainer = document.querySelector(".berita-utama");
 
   for (let i = 13; i < Math.min(data.length, 17); i++) {
@@ -253,7 +207,7 @@ const displayHome = async () => {
   let combinedData = [];
 
   for (const category of categories) {
-    const categoryData = await fetchData(category);
+    const categoryData = await fetchData(`${API_URL}${category}?pageSize=100`);
 
     if (categoryData) {
       combinedData = combinedData.concat(categoryData);
@@ -261,6 +215,58 @@ const displayHome = async () => {
       console.error(`No data available for category: ${category}`);
     }
   }
+
+  const newestData = await fetchData(`${API_URL_NEWEST}`);
+  
+  if (newestData) {
+    const beritaSection = document.querySelector(".berita");
+  
+    for (let i = 0; i < Math.min(newestData.length, 5); i++) {
+      const beritaTerbaru = document.createElement("article");
+      beritaTerbaru.classList.add("berita-terbaru");
+  
+      const newsSectionArticle = document.createElement("article");
+      newsSectionArticle.classList.add("berita-article");
+  
+      const articleLink = document.createElement("a");
+      articleLink.href = `./detail.html?id=${newestData[i].id}`;
+  
+      const articleImage = document.createElement("img");
+      articleImage.src = newestData[i].img_url;
+      articleLink.appendChild(articleImage);
+  
+      const articleTitle = document.createElement("h1");
+      articleTitle.classList.add("terbaru-title");
+      articleTitle.textContent = newestData[i].title;
+  
+      const publishDate = new Date(newestData[i].publish_at);
+      const currentDate = new Date();
+      const timeDifference = currentDate - publishDate;
+      const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  
+      const combinedInfoParagraph = document.createElement("p");
+  
+      const publishDateSpan = document.createElement("span");
+      publishDateSpan.classList.add("publish-date");
+      publishDateSpan.textContent = `• ${daysAgo} hari yang lalu`;
+  
+      combinedInfoParagraph.innerHTML = `${newestData[i].category}  `;
+      combinedInfoParagraph.appendChild(publishDateSpan);
+  
+      articleTitle.appendChild(combinedInfoParagraph);
+      articleLink.appendChild(articleTitle);
+  
+      newsSectionArticle.appendChild(articleLink);
+  
+      beritaTerbaru.appendChild(newsSectionArticle);
+      beritaSection.appendChild(beritaTerbaru);
+    }
+  
+    combinedData = combinedData.concat(newestData);
+  } else {
+    console.error("No data available for newest articles");
+  }
+  
 
   combinedData = shuffleArray(combinedData);
 
