@@ -27,7 +27,7 @@ const displayData = (data) => {
   mainArticle.classList.add("main-article");
 
   const mainLink = document.createElement("a");
-  mainLink.href = `../../detail.html?id=${data[5].id}`;
+  mainLink.href = `../detail.html?id=${data[5].id}`;
   mainLink.classList.add("article-link");
   mainArticle.appendChild(mainLink);
 
@@ -78,7 +78,7 @@ const displayData = (data) => {
 
     const articleLink = document.createElement("a");
 
-    articleLink.href = `../../detail.html?id=${data[i].id}`;
+    articleLink.href = `../detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");
     articleImage.src = data[i].img_url;

@@ -23,7 +23,7 @@ const displayData = (data) => {
   mainArticle.classList.add("main-article");
 
   const mainLink = document.createElement("a");
-  mainLink.href = `./detail.html?id=${data[0].id}`;
+  mainLink.href = `./berita/detail.html?id=${data[0].id}`;
   mainLink.classList.add("article-link");
   mainArticle.appendChild(mainLink);
 
@@ -69,7 +69,7 @@ const displayData = (data) => {
     secondaryArticle.classList.add("secondary-article");
 
     const secondaryLink = document.createElement("a");
-    secondaryLink.href = `./detail.html?id=${data[i].id}`;
+    secondaryLink.href = `./berita/detail.html?id=${data[i].id}`;
     secondaryLink.classList.add("article-link");
     secondaryArticle.appendChild(secondaryLink);
 
@@ -113,7 +113,7 @@ const displayData = (data) => {
     popularArticle.classList.add("article-list-item");
 
     const popularLink = document.createElement("a");
-    popularLink.href = `./detail.html?id=${data[i].id}`;
+    popularLink.href = `./berita/detail.html?id=${data[i].id}`;
     popularLink.classList.add("article-link");
     popularArticle.appendChild(popularLink);
 
@@ -142,7 +142,7 @@ const displayData = (data) => {
     beritaUtamaArticle.classList.add("berita-utama-article");
 
     const utamaLink = document.createElement("a");
-    utamaLink.href = `./detail.html?id=${data[i].id}`;
+    utamaLink.href = `./berita/detail.html?id=${data[i].id}`;
     utamaLink.classList.add("article-link");
     beritaUtamaArticle.appendChild(utamaLink);
 
@@ -171,7 +171,7 @@ const displayData = (data) => {
     rekomendasiBeritaArticle.classList.add("berita-utama-article");
 
     const rekomendasiLink = document.createElement("a");
-    rekomendasiLink.href = `./detail.html?id=${data[i].id}`;
+    rekomendasiLink.href = `./berita/detail.html?id=${data[i].id}`;
     rekomendasiLink.classList.add("article-link");
     rekomendasiBeritaArticle.appendChild(rekomendasiLink);
 
@@ -227,7 +227,7 @@ const displayHome = async () => {
       newsSectionArticle.classList.add("berita-article");
 
       const articleLink = document.createElement("a");
-      articleLink.href = `./detail.html?id=${newestData[i].id}`;
+      articleLink.href = `./berita/detail.html?id=${newestData[i].id}`;
 
       const articleImage = document.createElement("img");
       articleImage.src = newestData[i].img_url;

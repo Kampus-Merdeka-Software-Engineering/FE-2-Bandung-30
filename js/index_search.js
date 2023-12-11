@@ -21,7 +21,7 @@ searchBox.addEventListener("keydown", function (e) {
 
     const keyword = searchBox.value.trim();
     if (keyword !== "") {
-      window.location.href = `search_results.html?keyword=${encodeURIComponent(
+      window.location.href = `./berita/search_results.html?keyword=${encodeURIComponent(
         keyword
       ).replace(/%20/g, "+")}`;
     }

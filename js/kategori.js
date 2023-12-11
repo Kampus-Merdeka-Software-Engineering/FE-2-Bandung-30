@@ -27,7 +27,7 @@ const displayData = (data) => {
   mainArticle.classList.add("main-article");
 
   const mainLink = document.createElement("a");
-  mainLink.href = `../../detail.html?id=${data[5].id}`;
+  mainLink.href = `../detail.html?id=${data[5].id}`;
   mainLink.classList.add("article-link");
   mainArticle.appendChild(mainLink);
 
@@ -73,7 +73,7 @@ const displayData = (data) => {
     secondaryArticle.classList.add("secondary-article");
 
     const secondaryLink = document.createElement("a");
-    secondaryLink.href = `../../detail.html?id=${data[i].id}`;
+    secondaryLink.href = `../detail.html?id=${data[i].id}`;
     secondaryLink.classList.add("article-link");
     secondaryArticle.appendChild(secondaryLink);
 
@@ -117,7 +117,7 @@ const displayData = (data) => {
     popularArticle.classList.add("article-list-item");
 
     const popularLink = document.createElement("a");
-    popularLink.href = `../../detail.html?id=${data[i].id}`;
+    popularLink.href = `../detail.html?id=${data[i].id}`;
     popularLink.classList.add("article-link");
     popularArticle.appendChild(popularLink);
 
@@ -153,7 +153,7 @@ const displayData = (data) => {
 
     const articleLink = document.createElement("a");
 
-    articleLink.href = `../../detail.html?id=${data[i].id}`;
+    articleLink.href = `../detail.html?id=${data[i].id}`;
 
     const articleImage = document.createElement("img");
     articleImage.src = data[i].img_url;
